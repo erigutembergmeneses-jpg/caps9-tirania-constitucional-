@@ -1,0 +1,41 @@
+{
+  "exemplo_evento": {
+    "event_id": "2026-10-11-001",
+    "event_date": "2026-10-11",
+    "jurisdiction": "BR",
+    "institution": "STF",
+    "dimension": "D1",
+    "event_type": "nomeacao",
+    "source_url": "https://exemplo.org/documento",
+    "verification_status": "confirmado",
+    "severity": 3,
+    "confidence": 0.85,
+    "last_updated": "2026-10-11T14:30:00Z",
+    "correction_history": []
+  },
+  "exemplo_lista_eventos": {
+    "total": 2,
+    "eventos": [
+      {
+        "event_id": "2026-10-11-001",
+        "event_date": "2026-10-11",
+        "jurisdiction": "BR",
+        "institution": "STF",
+        "dimension": "D1",
+        "event_type": "nomeacao",
+        "severity": 3,
+        "confidence": 0.85
+      },
+      {
+        "event_id": "2026-10-10-002",
+        "event_date": "2026-10-10",
+        "jurisdiction": "BR",
+        "institution": "CGU",
+        "dimension": "D2",
+        "event_type": "restricao_orcamentaria",
+        "severity": 4,
+        "confidence": 0.90
+      }
+    ]
+  }
+}
