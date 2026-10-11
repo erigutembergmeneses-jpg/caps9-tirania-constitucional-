@@ -1,0 +1,23 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporários
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Dependências (se houver)
+node_modules/
+__pycache__/
+*.pyc
