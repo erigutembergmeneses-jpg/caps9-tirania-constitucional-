@@ -1,0 +1,68 @@
+{
+  "event_id": {
+    "type": "string",
+    "description": "Identificador único do evento",
+    "example": "2026-10-11-001"
+  },
+  "event_date": {
+    "type": "date",
+    "description": "Data do acontecimento",
+    "example": "2026-10-11"
+  },
+  "jurisdiction": {
+    "type": "string",
+    "description": "País, estado ou município",
+    "example": "BR"
+  },
+  "institution": {
+    "type": "string",
+    "description": "Instituição afetada",
+    "example": "STF"
+  },
+  "dimension": {
+    "type": "string",
+    "description": "Dimensão do IPI",
+    "enum": ["D1", "D2", "D3", "D4", "D5"],
+    "example": "D1"
+  },
+  "event_type": {
+    "type": "string",
+    "description": "Tipo de evento",
+    "example": "nomeacao"
+  },
+  "source_url": {
+    "type": "string",
+    "description": "URL da fonte primária",
+    "example": "https://exemplo.org/documento"
+  },
+  "verification_status": {
+    "type": "string",
+    "description": "Estado da verificação",
+    "enum": ["pendente", "confirmado", "contestado"],
+    "example": "confirmado"
+  },
+  "severity": {
+    "type": "integer",
+    "description": "Gravidade preliminar (1 a 5)",
+    "minimum": 1,
+    "maximum": 5,
+    "example": 3
+  },
+  "confidence": {
+    "type": "float",
+    "description": "Grau de confiança (0 a 1)",
+    "minimum": 0,
+    "maximum": 1,
+    "example": 0.85
+  },
+  "last_updated": {
+    "type": "datetime",
+    "description": "Última atualização",
+    "example": "2026-10-11T14:30:00Z"
+  },
+  "correction_history": {
+    "type": "array",
+    "description": "Histórico de correções",
+    "example": []
+  }
+}
