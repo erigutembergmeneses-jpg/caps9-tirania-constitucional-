@@ -54,3 +54,45 @@ O Índice de Preservação Institucional (IPI) é uma ferramenta concebida para 
 - Possibilidade de fiscalização cidadã.
 
 ## 3. Fórmula
+
+## 4. Escala de classificação
+
+| Faixa | Classificação |
+|-------|---------------|
+| 0 a menos de 4 | Erosão crítica |
+| 4 a menos de 6 | Erosão moderada |
+| 6 a menos de 8 | Preservação moderada |
+| 8 a 10 | Preservação elevada |
+
+## 5. Ficha de avaliação
+
+Cada avaliação deve ser acompanhada de:
+
+1. Instituição ou país avaliado;
+2. Período de referência;
+3. Indicador específico;
+4. Definição operacional;
+5. Fonte documental;
+6. Data de coleta;
+7. Regra de pontuação;
+8. Justificativa da nota;
+9. Avaliador responsável;
+10. Grau de confiança e limitações;
+11. Divergências entre avaliadores;
+12. Histórico de revisões.
+
+## 6. Limitações
+
+1. Falta de validação empírica;
+2. Falta de consulta a especialistas;
+3. Falta de dados comparativos;
+4. Falta de memória de cálculo;
+5. Risco de arbitrariedade;
+6. Risco de uso político.
+
+## 7. Agenda de validação
+
+1. Validação qualitativa (Delphi);
+2. Validação quantitativa (PCA);
+3. Validação externa;
+4. Publicação dos dados.
