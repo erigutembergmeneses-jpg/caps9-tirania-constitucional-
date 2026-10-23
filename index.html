@@ -3,302 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capítulo 9 — Alerta Precoce e Monitoramento | A Tirania Constitucional</title>
-    <meta name="description" content="Repositório digital complementar ao Capítulo 9 do livro A Tirania Constitucional">
-    <style>
-        :root {
-            --cor-primaria: #1a1a1a;
-            --cor-secundaria: #444;
-            --cor-fundo: #fafafa;
-            --cor-box: #f5f5f5;
-            --cor-borda: #ddd;
-            --cor-destaque: #0066cc;
-            --cor-aviso: #fff3cd;
-            --cor-aviso-borda: #ffc107;
-        }
-        * { box-sizing: border-box; }
-        body {
-            font-family: Georgia, 'Times New Roman', serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            line-height: 1.7;
-            color: var(--cor-primaria);
-            background: var(--cor-fundo);
-        }
-        header {
-            border-bottom: 3px solid var(--cor-primaria);
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 1.9rem;
-            line-height: 1.3;
-            margin: 0 0 0.5rem 0;
-        }
-        .subtitulo {
-            font-size: 1rem;
-            color: var(--cor-secundaria);
-            font-style: italic;
-        }
-        h2 {
-            font-size: 1.4rem;
-            margin-top: 2.5rem;
-            border-bottom: 1px solid var(--cor-borda);
-            padding-bottom: 0.3rem;
-        }
-        h3 {
-            font-size: 1.1rem;
-            margin-top: 1.8rem;
-            color: var(--cor-secundaria);
-        }
-        p { margin: 1rem 0; text-align: justify; }
-        ul, ol { padding-left: 1.5rem; }
-        li { margin: 0.4rem 0; }
-        a { color: var(--cor-destaque); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .aviso {
-            background: var(--cor-aviso);
-            border-left: 4px solid var(--cor-aviso-borda);
-            padding: 1rem 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 3px;
-        }
-        .box {
-            background: var(--cor-box);
-            border-top: 3px solid var(--cor-secundaria);
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 3px;
-        }
-        .box-titulo {
-            font-family: Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            color: var(--cor-secundaria);
-            margin-bottom: 0.5rem;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 1.2rem 0;
-            font-size: 0.95rem;
-        }
-        th, td {
-            border: 1px solid var(--cor-borda);
-            padding: 0.6rem 0.8rem;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background: #eee;
-            font-weight: bold;
-        }
-        .qrcode {
-            text-align: center;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #fff;
-            border: 1px solid var(--cor-borda);
-            border-radius: 5px;
-        }
-        .qrcode img {
-            max-width: 180px;
-            height: auto;
-            margin: 0.5rem 0;
-        }
-        .arquivos {
-            background: #fff;
-            border: 1px solid var(--cor-borda);
-            border-radius: 5px;
-            padding: 1.2rem 1.5rem;
-        }
-        footer {
-            margin-top: 3rem;
-            border-top: 1px solid var(--cor-borda);
-            padding-top: 1.5rem;
-            font-size: 0.9rem;
-            color: #666;
-            text-align: center;
-        }
-        @media (max-width: 600px) {
-            body { padding: 1rem; }
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.2rem; }
-        }
-    </style>
+    <title>Capítulo 9 — Alerta Precoce e Monitoramento da Preservação Institucional</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte para melhor legibilidade -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Capítulo 9 — Alerta Precoce e Monitoramento da Preservação Institucional</h1>
-    <p class="subtitulo">Repositório digital complementar ao livro <em>A Tirania Constitucional: Como a Legalidade Pode Enfraquecer a Democracia</em></p>
-</header>
+    <!-- Overlay escuro para garantir a leitura do texto sobre a imagem -->
+    <div class="overlay"></div>
 
-<div class="aviso">
-    <strong>Nota de transparência:</strong> Este capítulo apresenta uma <strong>proposta metodológica</strong>. Os instrumentos aqui descritos — o IPI, o SAPED, o Observatório da Preservação Institucional, o canal "Vigia Democrático" e a API pública — <strong>não foram implementados</strong>. Não há consulta Delphi realizada, dados coletados, análise estatística aplicada ou índice calculado. Todo o material complementar está disponível neste repositório para permitir auditoria futura e colaboração.
-</div>
+    <div class="container">
+        <!-- Cabeçalho / Título Principal -->
+        <header class="main-header">
+            <h1>A Tirania Constitucional</h1>
+            <h2>Capítulo 9 — Alerta Precoce e Monitoramento da Preservação Institucional</h2>
+            <p class="subtitle">Repositório digital complementar ao livro: Como a Legalidade Pode Enfraquecer a Democracia</p>
+            <div class="transparency-note">
+                <strong>Nota de transparência:</strong> Este capítulo apresenta uma proposta metodológica. Os instrumentos aqui descritos (IPI, SAPED, Observatório, canal "Vigia Democrático" e API pública) não foram implementados. Não há consulta Delphi realizada, dados coletados, análise estatística aplicada ou índice calculado.
+            </div>
+        </header>
 
-<h2>Resumo do capítulo</h2>
+        <!-- Grade de Cards -->
+        <main class="cards-grid">
+            
+            <!-- Card 1: Resumo -->
+            <article class="card">
+                <h3>Resumo do Capítulo</h3>
+                <p>O capítulo propõe uma arquitetura de monitoramento da preservação institucional, composta por cinco elementos complementares:</p>
+                <ul class="element-list">
+                    <li><strong>IPI:</strong> Sintetizar informações sobre a saúde institucional</li>
+                    <li><strong>SAPED:</strong> Acompanhar acontecimentos ao longo do tempo</li>
+                    <li><strong>Registro verificável:</strong> Documentar fatos com rastreabilidade</li>
+                    <li><strong>Infraestrutura:</strong> Permitir acesso público aos dados</li>
+                    <li><strong>Rede cívica:</strong> Mobilizar a sociedade para a resposta</li>
+                </ul>
+            </article>
 
-<p>O capítulo propõe uma <strong>arquitetura de monitoramento</strong> da preservação institucional, composta por cinco elementos complementares:</p>
+            <!-- Card 2: O IPI -->
+            <article class="card">
+                <h3>O IPI em Síntese</h3>
+                <p>O Índice de Preservação Institucional (IPI) organiza informações sobre as condições que permitem a uma democracia preservar sua estrutura.</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Dimensão</th>
+                            <th>Peso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1. Independência judicial</td><td>25%</td></tr>
+                        <tr><td>2. Independência dos órgãos de controle</td><td>20%</td></tr>
+                        <tr><td>3. Liberdade de expressão e imprensa</td><td>20%</td></tr>
+                        <tr><td>4. Integridade eleitoral</td><td>20%</td></tr>
+                        <tr><td>5. Participação e sociedade civil</td><td>15%</td></tr>
+                    </tbody>
+                </table>
+                <p class="formula"><strong>Fórmula:</strong> IPI = 0,25·D₁ + 0,20·D₂ + 0,20·D₃ + 0,20·D₄ + 0,15·D₅</p>
+                <p class="small-text">* Os pesos são hipóteses de trabalho, não resultados de validação empírica.</p>
+            </article>
 
-<table>
-    <tr><th>Elemento</th><th>Função</th></tr>
-    <tr><td><strong>IPI</strong></td><td>Sintetizar informações sobre a saúde institucional</td></tr>
-    <tr><td><strong>SAPED</strong></td><td>Acompanhar acontecimentos ao longo do tempo</td></tr>
-    <tr><td><strong>Registro verificável de eventos</strong></td><td>Documentar fatos com rastreabilidade</td></tr>
-    <tr><td><strong>Infraestrutura de transparência</strong></td><td>Permitir acesso público aos dados</td></tr>
-    <tr><td><strong>Rede de participação cívica</strong></td><td>Mobilizar a sociedade para a resposta</td></tr>
-</table>
+            <!-- Card 3: Escala do IPI -->
+            <article class="card">
+                <h3>Escala de Classificação</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Faixa</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0 a &lt; 4</td><td>Erosão crítica</td></tr>
+                        <tr><td>4 a &lt; 6</td><td>Erosão moderada</td></tr>
+                        <tr><td>6 a &lt; 8</td><td>Preservação moderada</td></tr>
+                        <tr><td>8 a 10</td><td>Preservação elevada</td></tr>
+                    </tbody>
+                </table>
+            </article>
 
-<h3>O IPI em síntese</h3>
+            <!-- Card 4: O SAPED -->
+            <article class="card">
+                <h3>O SAPED em Síntese</h3>
+                <p>O Sistema de Alerta Precoce para Erosão Democrática acrescenta a dimensão temporal ao IPI.</p>
+                <ul class="element-list">
+                    <li>Monitoramento contínuo de eventos;</li>
+                    <li>Atualização periódica do IPI;</li>
+                    <li>Painel de especialistas (Delphi);</li>
+                    <li>Emissão de alertas públicos (verde, amarelo, laranja, vermelho).</li>
+                </ul>
+            </article>
 
-<p>O Índice de Preservação Institucional (IPI) é uma <strong>ferramenta concebida</strong> para organizar informações sobre as condições que permitem a uma democracia preservar sua estrutura de controles, proteger direitos e corrigir abusos de poder. Propõe cinco dimensões:</p>
+            <!-- Card 5: Limitações -->
+            <article class="card">
+                <h3>Limitações Reconhecidas</h3>
+                <ul class="element-list">
+                    <li>Falta de validação empírica dos pesos;</li>
+                    <li>Falta de consulta a especialistas (Delphi);</li>
+                    <li>Falta de dados comparativos;</li>
+                    <li>Falta de memória de cálculo;</li>
+                    <li>Risco de arbitrariedade e de uso político;</li>
+                    <li>Risco de falsos positivos e falsos negativos.</li>
+                </ul>
+            </article>
 
-<table>
-    <tr><th>Dimensão</th><th>Peso proposto</th></tr>
-    <tr><td>1. Independência judicial</td><td>25%</td></tr>
-    <tr><td>2. Independência dos órgãos de controle</td><td>20%</td></tr>
-    <tr><td>3. Liberdade de expressão e imprensa</td><td>20%</td></tr>
-    <tr><td>4. Integridade eleitoral</td><td>20%</td></tr>
-    <tr><td>5. Participação e sociedade civil</td><td>15%</td></tr>
-</table>
+            <!-- Card 6: QR Codes (Simulados) -->
+            <article class="card qr-card">
+                <h3>Acessos Rápidos</h3>
+                <div class="qr-grid">
+                    <div class="qr-item">
+                        <div class="qr-placeholder">QR 9.1</div>
+                        <p>Repositório do Capítulo 9</p>
+                    </div>
+                    <div class="qr-item">
+                        <div class="qr-placeholder">QR 9.2</div>
+                        <p>Documentário DW</p>
+                    </div>
+                    <div class="qr-item">
+                        <div class="qr-placeholder">QR 9.3</div>
+                        <p>Calculadora do IPI</p>
+                    </div>
+                </div>
+            </article>
 
-<p><strong>Fórmula proposta:</strong> IPI = 0,25·D₁ + 0,20·D₂ + 0,20·D₃ + 0,20·D₄ + 0,15·D₅</p>
+        </main>
 
-<p>Os pesos são <strong>hipóteses de trabalho</strong>, não resultados de validação empírica. A escala de classificação proposta é:</p>
+        <footer class="site-footer">
+            <p>Como citar: AUTOR. Capítulo 9 — Alerta Precoce e Monitoramento da Preservação Institucional. In: <em>A Tirania Constitucional</em>. Brasília, 2026.</p>
+            <p>Licença: <a href="#" target="_blank">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a></p>
+        </footer>
+    </div>
 
-<table>
-    <tr><th>Faixa</th><th>Classificação</th></tr>
-    <tr><td>0 a menos de 4</td><td>Erosão crítica</td></tr>
-    <tr><td>4 a menos de 6</td><td>Erosão moderada</td></tr>
-    <tr><td>6 a menos de 8</td><td>Preservação moderada</td></tr>
-    <tr><td>8 a 10</td><td>Preservação elevada</td></tr>
-</table>
-
-<h3>O SAPED em síntese</h3>
-
-<p>O Sistema de Alerta Precoce para Erosão Democrática (SAPED) acrescenta a dimensão temporal ao IPI. Seus quatro componentes propostos são:</p>
-<ol>
-    <li>Monitoramento contínuo de eventos;</li>
-    <li>Atualização periódica do IPI;</li>
-    <li>Painel de especialistas (Delphi);</li>
-    <li>Emissão de alertas públicos (verde, amarelo, laranja, vermelho).</li>
-</ol>
-
-<h3>Limitações reconhecidas</h3>
-
-<ul>
-    <li>Falta de validação empírica dos pesos;</li>
-    <li>Falta de consulta a especialistas (Delphi);</li>
-    <li>Falta de dados comparativos;</li>
-    <li>Falta de memória de cálculo;</li>
-    <li>Risco de arbitrariedade e de uso político;</li>
-    <li>Risco de falsos positivos e falsos negativos.</li>
-</ul>
-
-<h2>Arquivos disponíveis neste repositório</h2>
-
-<div class="arquivos">
-<h3>Texto</h3>
-<ul>
-    <li><a href="texto/cap09-completo.md">Texto integral do Capítulo 9 (Markdown)</a></li>
-    <li><a href="texto/cap09-resumo-executivo.md">Resumo executivo (Markdown)</a></li>
-</ul>
-
-<h3>Metodologia</h3>
-<ul>
-    <li><a href="metodologia/manual-ipi-preliminar.md">Manual metodológico preliminar do IPI</a></li>
-    <li><a href="metodologia/sapied-descricao.md">Descrição operacional do SAPED</a></li>
-    <li><a href="metodologia/ficha-avaliacao-institucional.md">Ficha de avaliação institucional</a></li>
-    <li><a href="metodologia/formulario-registro-eventos.md">Formulário de registro padronizado de eventos</a></li>
-    <li><a href="metodologia/roteiro-delphi-preliminar.md">Roteiro preliminar da consulta Delphi</a></li>
-    <li><a href="metodologia/fontes-dados-previstas.md">Fontes de dados previstas</a></li>
-</ul>
-
-<h3>API</h3>
-<ul>
-    <li><a href="api/api-specification.md">Especificação técnica da API</a></li>
-    <li><a href="api/api-fields.json">Campos da API (JSON)</a></li>
-    <li><a href="api/api-examples.json">Exemplos de uso (JSON)</a></li>
-</ul>
-
-<h3>Calculadora</h3>
-<ul>
-    <li><a href="calculadora/calculadora-ipi.html">Calculadora do IPI (ferramenta conceitual)</a></li>
-</ul>
-
-<h3>Agenda de pesquisa</h3>
-<ul>
-    <li><a href="agenda-pesquisa/agenda-validacao-ipi.md">Agenda de validação do IPI</a></li>
-    <li><a href="agenda-pesquisa/cronograma-previsto.md">Cronograma previsto</a></li>
-    <li><a href="agenda-pesquisa/fontes-financiamento.md">Fontes de financiamento</a></li>
-</ul>
-
-<h3>Auditoria</h3>
-<ul>
-    <li><a href="auditoria/protocolo-auditoria.md">Protocolo de auditoria</a></li>
-    <li><a href="auditoria/formulario-resposta.md">Formulário de resposta</a></li>
-    <li><a href="auditoria/relatorio-aprendizagem-template.md">Template de relatório de aprendizagem</a></li>
-</ul>
-
-<h3>Colaboração</h3>
-<ul>
-    <li><a href="colaboracao/como-colaborar.md">Como colaborar</a></li>
-    <li><a href="colaboracao/termos-colaboracao.md">Termos de colaboração</a></li>
-    <li><a href="colaboracao/contato.md">Contato</a></li>
-</ul>
-</div>
-
-<h2>QR Codes</h2>
-
-<div class="qrcode">
-    <p><strong>QR 9.1 — Repositório do Capítulo 9</strong></p>
-    <img src="qrcodes/qr9-1-repositorio.png" alt="QR Code do repositório do Capítulo 9">
-    <p><em>Escaneie para acessar este repositório no GitHub.</em></p>
-    <p><small><a href="https://erigutembergmeneses-jpg.github.io/caps9-tirania-constitucional-/">Link alternativo</a></small></p>
-</div>
-
-<div class="qrcode">
-    <p><strong>QR 9.2 — Documentário: A Greve das Mulheres na Polônia</strong></p>
-    <img src="qrcodes/qr9-2-documentario.png" alt="QR Code do documentário sobre a greve das mulheres na Polônia">
-    <p><em>Escaneie para acessar a reportagem da Deutsche Welle.</em></p>
-    <p><small><a href="https://www.dw.com/en/women-go-on-black-monday-strike-in-poland-against-abortion-ban/a-35947232">Link alternativo</a></small></p>
-</div>
-
-<div class="qrcode">
-    <p><strong>QR 9.3 — Proposta: Calculadora do IPI</strong></p>
-    <img src="qrcodes/qr9-3-calculadora.png" alt="QR Code da calculadora conceitual do IPI">
-    <p><em>Escaneie para acessar a calculadora conceitual do IPI.</em></p>
-    <p><small><a href="https://erigutembergmeneses-jpg.github.io/caps9-tirania-constitucional-/calculadora/calculadora-ipi.html">Link alternativo</a></small></p>
-</div>
-
-<h2>Como citar este repositório</h2>
-
-<p>AUTOR. <em>Capítulo 9 — Alerta Precoce e Monitoramento da Preservação Institucional</em>. In: <em>A Tirania Constitucional: Como a Legalidade Pode Enfraquecer a Democracia</em>. Brasília, 2026. Disponível em: https://github.com/SEU-USUARIO/caps9-tirania-constitucional. Acesso em: [data].</p>
-
-<h2>Licença</h2>
-
-<p>Este repositório é disponibilizado sob a licença <a href="LICENSE.txt">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>. Você pode compartilhar, adaptar e reutilizar o material, desde que atribua o crédito apropriado.</p>
-
-<footer>
-    <p>© 2026 — O Autor. Todos os direitos reservados.</p>
-    <p>Repositório: <a href="https://erigutembergmeneses-jpg.github.io/caps9-tirania-constitucional-/"></a></p>
-</footer>
-  <!-- Início do Rodapé de Preservação Acadêmica -->
-  <footer class="footer-preservacao">
-    <p>
-      <strong>Preservação Digital e Transparência Metodológica</strong><br>
-      O código-fonte, os dados brutos e a metodologia deste projeto estão preservados permanentemente no repositório acadêmico Zenodo para garantir auditoria e reprodutibilidade.<br>
-      <strong>DOI:</strong> <a href="https://zenodo.org/records/23322506" target="_blank" rel="noopener noreferrer"></a><br>
-      <span class="licenca">Este trabalho está licenciado sob uma <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>.</span>
-    </p>
-  </footer>
-  <!-- Fim do Rodapé de Preservação Acadêmica -->
-
-</body>
-</html>
 </body>
 </html>
