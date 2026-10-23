@@ -1,319 +1,250 @@
-/* ============================================================
-   ESTILOS DO CAPÍTULO 9 — A TIRANIA CONSTITUCIONAL
-   ============================================================
-   Arquivo: style.css
-   Descrição: Folha de estilos do site do Capítulo 9
-   Licença: CC BY 4.0
-   ============================================================ */
-
-/* ---------- RESET E VARIÁVEIS ---------- */
-
-:root {
-    --cor-primaria: #1a1a1a;
-    --cor-secundaria: #444;
-    --cor-fundo: #fafafa;
-    --cor-box: #f5f5f5;
-    --cor-borda: #ddd;
-    --cor-destaque: #0066cc;
-    --cor-aviso: #fff3cd;
-    --cor-aviso-borda: #ffc107;
-    --cor-sucesso: #d4edda;
-    --cor-sucesso-borda: #28a745;
-}
-
+/* Reset básico */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* ---------- CORPO ---------- */
-
 body {
-    font-family: Georgia, 'Times New Roman', serif;
-    max-width: 900px;
+    font-family: 'Inter', sans-serif;
+    color: #f0f0f0;
+    line-height: 1.6;
+    background-color: #000;
+    
+    /* CONFIGURAÇÃO DA CAPA COMO PLANO DE FUNDO */
+    background-image: url('capa.jpg'); /* Certifique-se de que o arquivo está na mesma pasta */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Overlay escuro para garantir contraste e leitura */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Ajuste a opacidade conforme necessário (0.85 = 85% escuro) */
+    z-index: 1;
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
-    line-height: 1.7;
-    color: var(--cor-primaria);
-    background: var(--cor-fundo);
+    padding: 40px 20px;
 }
 
-/* ---------- CABEÇALHO ---------- */
-
-header {
-    border-bottom: 3px solid var(--cor-primaria);
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+/* Cabeçalho */
+.main-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(220, 38, 38, 0.5); /* Linha vermelha sutil */
 }
 
-h1 {
-    font-size: 1.9rem;
-    line-height: 1.3;
-    margin: 0 0 0.5rem 0;
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
-.subtitulo {
-    font-size: 1rem;
-    color: var(--cor-secundaria);
+.main-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #dc2626; /* Vermelho da capa */
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.transparency-note {
+    background-color: rgba(220, 38, 38, 0.15);
+    border-left: 4px solid #dc2626;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #e5e5e5;
+    border-radius: 4px;
+}
+
+/* Grade de Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo dos Cards */
+.card {
+    background: rgba(20, 20, 20, 0.9); /* Fundo escuro semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    backdrop-filter: blur(5px); /* Efeito de vidro */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #dc2626;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Listas dentro dos cards */
+.element-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.element-list li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+    color: #ddd;
+}
+
+.element-list li::before {
+    content: "•";
+    color: #dc2626;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Tabelas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.data-table th, .data-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.data-table th {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.data-table td {
+    color: #ddd;
+}
+
+/* Fórmula e textos pequenos */
+.formula {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    color: #888;
     font-style: italic;
 }
 
-/* ---------- TÍTULOS ---------- */
-
-h2 {
-    font-size: 1.4rem;
-    margin-top: 2.5rem;
-    border-bottom: 1px solid var(--cor-borda);
-    padding-bottom: 0.3rem;
+/* QR Codes (Simulação visual) */
+.qr-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-h3 {
-    font-size: 1.1rem;
-    margin-top: 1.8rem;
-    color: var(--cor-secundaria);
+.qr-item {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
 }
 
-/* ---------- PARÁGRAFOS E LISTAS ---------- */
-
-p {
-    margin: 1rem 0;
-    text-align: justify;
-}
-
-ul, ol {
-    padding-left: 1.5rem;
-}
-
-li {
-    margin: 0.4rem 0;
-}
-
-/* ---------- LINKS ---------- */
-
-a {
-    color: var(--cor-destaque);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* ---------- AVISOS ---------- */
-
-.aviso {
-    background: var(--cor-aviso);
-    border-left: 4px solid var(--cor-aviso-borda);
-    padding: 1rem 1.2rem;
-    margin: 1.5rem 0;
-    border-radius: 3px;
-}
-
-.sucesso {
-    background: var(--cor-sucesso);
-    border-left: 4px solid var(--cor-sucesso-borda);
-    padding: 1rem 1.2rem;
-    margin: 1.5rem 0;
-    border-radius: 3px;
-}
-
-/* ---------- BOXES ---------- */
-
-.box {
-    background: var(--cor-box);
-    border-top: 3px solid var(--cor-secundaria);
-    padding: 1.2rem;
-    margin: 1.5rem 0;
-    border-radius: 3px;
-}
-
-.box-titulo {
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
-    color: var(--cor-secundaria);
-    margin-bottom: 0.5rem;
-}
-
-/* ---------- TABELAS ---------- */
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1.2rem 0;
-    font-size: 0.95rem;
-}
-
-th, td {
-    border: 1px solid var(--cor-borda);
-    padding: 0.6rem 0.8rem;
-    text-align: left;
-    vertical-align: top;
-}
-
-th {
-    background: #eee;
+.qr-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border: 2px dashed #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px auto;
+    color: #dc2626;
     font-weight: bold;
+    border-radius: 4px;
 }
 
-/* ---------- ARQUIVOS ---------- */
-
-.arquivos {
-    background: #fff;
-    border: 1px solid var(--cor-borda);
-    border-radius: 5px;
-    padding: 1.2rem 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.arquivos h3 {
-    font-size: 1rem;
-    color: var(--cor-secundaria);
-    margin-top: 1.2rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 0.3rem;
-}
-
-.arquivos ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0.5rem 0;
-}
-
-.arquivos li {
-    margin: 0.4rem 0;
-    padding-left: 1.2rem;
-    position: relative;
-}
-
-.arquivos li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--cor-destaque);
-    font-weight: bold;
-}
-
-.arquivos a {
-    color: var(--cor-destaque);
-    text-decoration: none;
-}
-
-.arquivos a:hover {
-    text-decoration: underline;
-}
-
-/* ---------- QR CODES ---------- */
-
-.qrcode {
+/* Rodapé */
+.site-footer {
+    margin-top: 50px;
     text-align: center;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #fff;
-    border: 1px solid var(--cor-borda);
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.qrcode img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    margin: 0.8rem auto;
-    display: block;
-    border: 1px solid #eee;
-    border-radius: 3px;
-    padding: 5px;
-    background: #fff;
-}
-
-.qrcode p {
-    margin: 0.5rem 0;
-    text-align: center;
-}
-
-.qrcode strong {
-    font-size: 1rem;
-    color: var(--cor-primaria);
-    display: block;
-    margin-bottom: 0.3rem;
-}
-
-.qrcode em {
-    font-size: 0.9rem;
-    color: var(--cor-secundaria);
-    display: block;
-    margin: 0.5rem 0;
-}
-
-.qrcode small {
-    color: #666;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.85rem;
-    display: block;
-    margin-top: 0.8rem;
+    color: #888;
 }
 
-.qrcode small a {
-    color: var(--cor-destaque);
+.site-footer a {
+    color: #dc2626;
     text-decoration: none;
 }
 
-.qrcode small a:hover {
+.site-footer a:hover {
     text-decoration: underline;
 }
 
-/* ---------- RODAPÉ ---------- */
-
-footer {
-    margin-top: 3rem;
-    border-top: 1px solid var(--cor-borda);
-    padding-top: 1.5rem;
-    font-size: 0.9rem;
-    color: #666;
-    text-align: center;
-}
-
-/* ---------- RESPONSIVIDADE ---------- */
-
-@media (max-width: 600px) {
-    body {
-        padding: 1rem;
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
     }
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
+    
+    .main-header h2 {
         font-size: 1.2rem;
     }
-    .qrcode img {
-        max-width: 150px;
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
-    table {
-        font-size: 0.85rem;
-    }
-    th, td {
-        padding: 0.4rem 0.5rem;
-    }
-}
-
-/* ---------- IMPRESSÃO ---------- */
-
-@media print {
+    
+    /* Em dispositivos móveis, o background-attachment: fixed pode causar problemas de performance */
     body {
-        background: #fff;
-        color: #000;
-        font-size: 11pt;
-    }
-    .qrcode {
-        border: 1px solid #000;
-        page-break-inside: avoid;
-    }
-    .qrcode img {
-        max-width: 150px;
-    }
-    a {
-        color: #000;
-        text-decoration: none;
+        background-attachment: scroll;
     }
 }
